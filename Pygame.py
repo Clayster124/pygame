@@ -8,7 +8,7 @@ pygame.init()
 display = pygame.display.set_mode((800, 600))
 clock = pygame.time.Clock()
 
-player_walk_images = [pygame.image.load("player_walk_0.png"), pygame.image.load("player_walk_1.png"), pygame.image.load("player_walk_2.png"), pygame.image.load("player_walk_3.png")]
+player_walk_images = [pygame.image.load("imgs/player_walk_0.png"), pygame.image.load("imgs/player_walk_1.png"), pygame.image.load("imgs/player_walk_2.png"), pygame.image.load("imgs/player_walk_3.png")]
 
 class PlayerBullet: 
          def __init__(self, x, y, mouse_x, mouse_y):
@@ -56,7 +56,7 @@ class Player:
          def __init__(self, a, y):
             self.x = X
             self.y = y
-            self.animation_images = [pygame.image.load("slime_animation_0.png"), pygame.image.load("slime_animation_1.png"), pygame.image.load("slime_animation_2.png"), pygame.image.load("slime_animation_3.png")]
+            self.animation_images = [pygame.image.load("imgs/slime_animation_0.png"), pygame.image.load("imgs/slime_animation_1.png"), pygame.image.load("imgs/slime_animation_2.png"), pygame.image.load("imgs/slime_animation_3.png")]
             self.animation_count = 0
             self.reset_offset = 0
             self.offset_x = random.randrange(-150, 150)
